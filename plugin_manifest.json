@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "My FastAPI Tool",
+  "name_for_model": "fastapi_tool",
+  "description_for_human": "A tool that processes user input via FastAPI.",
+  "description_for_model": "Use this plugin to process input through the FastAPI tool.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://linkedin-ai-production.up.railway.app/openapi.json"
+  },
+  "logo_url": "https://linkedin-ai-production.up.railway.app/logo.jpg",
+  "contact_email": "abhinand.kr@insightiq.ai",
+  "legal_info_url": "https://example.com/legal"
+}
