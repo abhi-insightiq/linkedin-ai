@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-app = FastAPI(openapi_url="/openapi.json")
+app = FastAPI(
+    openapi_url="/openapi.json",
+    servers=[{"url": "https://linkedin-ai-production.up.railway.app", "description": "Production Server"}]
+)
 
 
 @app.get("/")
