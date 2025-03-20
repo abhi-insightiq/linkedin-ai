@@ -22,7 +22,7 @@ class OutputData(BaseModel):
 
 # Sample computation function (Replace with your actual logic)
 def process_text(input_text: str) -> str:
-    return input_text[::-1]  # Example: Reverses the string
+    return input_text[::-1].upper()  # Example: Reverses the string
 
 @app.post("/process", response_model=OutputData)
 def process_input(data: InputData):
